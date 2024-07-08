@@ -4,7 +4,7 @@ import streamlit_analytics
 import matplotlib.pyplot as plt
 
 st.set_page_config(
-        page_title="Last War Calculator",
+        page_title="Last War Calculadora",
 )
 
 level_exp = [0,100,200,300,400, #1-5
@@ -101,13 +101,13 @@ st.title('Last War Calculator')
 
 
 
-tab1, tab2, tab3, tab4, tab5 = st.tabs(["Hero Exp", "Speed-Up", "Stamina", "Loot Load", "Farm Output"])
+tab1, tab2, tab3, tab4, tab5 = st.tabs(["EXP de Herói >OFF<", "Aceleradores", "Vigor >OFF<", "Recursos de Saque >OFF<", "Edificios de Recursos"])
 
 ###############################################TABS###################################################
 ######################################################################################################
 
 with tab1:
-    st.header('Hero Level Calculator')
+    st.header('Calculadora de EXP')
 
     col1, col2 = st.columns(2)
 
@@ -145,7 +145,7 @@ with tab1:
 ######################################################################################################
 
 with tab2:
-    st.header('Speed-up Calculator')
+    st.header('Calculadora de Aceleradores')
 
 
     om = st.number_input('Number of 1 Minute Speedups:', value=0, format='%d', min_value=0)
